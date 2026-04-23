@@ -26,3 +26,24 @@
 ### 自行编译
 
 本项目基于 [Wails](https://wails.io/)（Go + Svelte）构建。
+
+#### 编译步骤
+
+```bash
+# 克隆仓库
+git clone https://github.com/turnaoo/ImageMergeTool.git
+cd ImageMergeTool
+
+# 安装依赖
+cd frontend
+npm install
+cd ..
+
+# 编译（Windows）
+wails build
+
+# 编译（macOS）
+wails build -platform darwin
+
+# 编译（Linux）
+wails build -platform linux
